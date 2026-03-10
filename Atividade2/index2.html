@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Criar conta</title>
+        <style>
+            html{
+                font-size: 22px;
+            }
+            body{
+                background-color: rgb(252, 163, 246);
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Crie sua conta:</legend>
+                <br>
+
+                <label>Nome:</label>
+                <input type="text" name="nome">
+                <br><br>
+
+                <label>E-mail:</label>
+                <input type="email" name="email" required>
+                <br><br>
+
+                <label>Senha:</label>
+                <input type="password" name="senha" minlength="8" required>
+                <br><br>
+
+                <b>Gênero</b><br>
+
+                <input type="radio" name="feminino" value="feminino">feminino
+                <br>
+
+                <input type="radio" name="masculino" value="masculino">masculino
+                <br><br>
+
+                <label>Biografia:</label>
+                <br>
+                <textarea name="Biografia" placeholder="Conte um pouco sobre você... " rows="4"></textarea>
+                <br><br>
+
+                <input type="checkbox" name="termos" required>
+                <label>Eu concordo com os termos de uso.</label>
+                <button button type="submit">Criar conta</button>
+                
+            </fieldset>
+
+            <button type="reset">Limpar formulário</button>
+        </form>
+    </body>
+</html>
