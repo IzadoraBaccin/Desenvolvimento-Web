@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*cen tralizacao*/
+body{
+    background-color: rgb(243, 195, 220);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 42px;
+}
+
+header{
+    width: 100%;
+    background-color: rgb(255, 0, 200);
+    color: rgb(5, 100, 117);
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*menu e links*/
+nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/*menu*/
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/*efeito hover nos links*/
+nav a:hover{
+    color: rgb(14, 203, 194);
+    text-decoration: underline;
+}
+
+aside{
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+aside a{
+    text-decoration: none;
+    color: rgb(124, 8, 84);
+    font-style: italic;
+}
+
+aside a:hover{
+    color: rgb(14, 203, 194);
+    text-decoration: underline;
+}
+
+/*card*/
+.card{
+    background-color: white;
+    max-width: 800px;
+    width: 90%;
+    padding: 40px;
+    margin: 40px auto;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/*titulo do post*/
+article h2{
+    font-size: 32px;
+    color: darkorchid;
+    margin-bottom: 15px;
+    font-family: fantasy;
+    text-align: center;
+}
+
+time{
+    display: block;
+    color: rgb(182, 9, 176);
+    margin-bottom: 20px;
+    font-size: medium;
+}
+
+/*paragrafos*/
+article p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/*estilo da imagem*/
+figure{
+    margin-top: 30px;
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+figcaption{
+    font-style: inherit;
+    font-size: medium;
+    color: rgb(80, 5, 115);
+    margin-top: 10px;
+}
