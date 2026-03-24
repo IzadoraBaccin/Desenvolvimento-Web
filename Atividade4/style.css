@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: "Playfair Display";
+    background-color: #f1d6f2;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+    grid-template-columns: 2fr 1fr;/*difine duas colunas, 2fr conteudo principal e 1fr o menos*/
+    gap: 20px;/* espaco entre os elementos*/
+    padding: 20px;
+}
+
+/* ÁREAS */
+header {
+    grid-area: header;
+    background: white;
+    color: #96038f;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main {
+    grid-area: main;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+aside {
+    grid-area: aside;
+    background: rgb(255, 255, 255);/*cor de fundo do segundo container*/
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    grid-area: footer;
+    background: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+h1{
+    color: #a7029f;
+    font-size: 60px;
+}
+
+h2, h3{
+    color: #df50d8;
+}
+
+p{
+    font-weight: 10px;
+}
+/*flexbox*/
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #a7029f;
+    font-weight: bold;
+}
+
+/* IMAGEM */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+figure {
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    body {
+        grid-template-areas:
+            "header"
+            "main"
+            "aside"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
