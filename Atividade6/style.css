@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    margin: 0;
+}
+
+.folha {
+    width: 350px;
+    min-height: 450px;
+    padding: 20px;
+    background-color: #eab0e4;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+}
+
+.folha h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+input {
+    padding: 8px;
+    width: 70%;
+    max-width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #c70a88;
+    color: white;
+}
+
+button:hover {
+    background-color: #900660;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background: #d40373;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    gap: 10px;
+    cursor: pointer;
+    /* quebra de texto automaticamente */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+li:hover {
+    background: #e0e0e0;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
